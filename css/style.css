@@ -1,0 +1,78 @@
+
+.large {
+    height: 50px;
+    color: transparent;
+}
+
+.medium {
+    height: 30px;
+    color: transparent;
+}
+
+.small {
+    height: 10px;
+    color: transparent;
+}
+
+.decor {
+    height: 2px;
+    background-color: #1E1E1E;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.topbar {
+    background-color: #EBEBEB;
+
+}
+
+.language {
+    flex-direction: row; 
+    align-items: flex-start; 
+    display: flex; c
+    olumn-gap: 8px;olumn-gap
+}
+
+.heroimg {
+    width: 100%;
+    height: 24rem;
+}
+
+.custom-btn {
+background-color: #1F2F33;
+color: white;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.centeralign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.enddecor {
+    background-color: #F8F8F4;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconsbox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 7rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    padding-top: 2rem;
+}

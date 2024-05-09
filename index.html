@@ -2,43 +2,65 @@
 <head> 
     <title> UPFH </title>     
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-</head> 
+    <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- overriding bootstrap styles and css -->
+    <style>.custom-btn { background-color: #1F2F33; color: white; height: 3.5rem; width: 6.5rem; border-radius: 13px; }</style>
+    <style>h1 { font-weight: bolder; font-family: Playfair Display; }</style>
+    <style>h2 { font-family: Montserrat; }</style>
+    <style>h3 { font-family: Montserrat; }</style>
+    <style>h4 { font-family: Montserrat; }</style>
+    <style>h5 { font-family: Montserrat; }</style>
+    <style>h6 { font-family: Montserrat; }</style>
+    <style>p { font-weight: 500; font-family: Montserrat; }</style>
+    <!-- end overriding bootstrap style and css -->
+</head>
 <body> 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3" style="flex-direction: row; align-items: flex-start; display: flex; column-gap: 8px;">
-                <div>Language:</div>
-                <div>EN</div>
-                <div>ES</div>
-                <div>PT</div>
-            </div>
-            <div class="col-md-6 spacer"></div>
-            <div class="col-md-3">
-                <h3>(801) 417-0131</h3> 
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-        <div class="container-fluid"> 
-            <img class="navbar-brand" style="width: 80px; height: 45px;" href="#"> 
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; flex-direction: column;">
-                    <div style="display: flex;">
-                        <div class="col-md-4 nav-item"> <a class="nav-link active" href="#">Locations</a> 
+    <div class="row topbar"> 
+        <div class="col-md-3 lnaguage" style="flex-direction: row; align-items: flex-start; display: flex; column-gap: 8px;"> 
+            <div>
+                <p>Language:</p>
+            </div>             
+            <div>
+                <p>EN</p>
+            </div>             
+            <div>
+                <p>ES</p>
+            </div>             
+            <div>
+                <p>PT</p>
+            </div>             
+        </div>         
+        <div class="col-md-6 spacer"></div>         
+        <div class="col-md-3"> 
+            <p>(801) 417-0131</p> 
+        </div>         
+    </div>     
+    <nav class="navbar navbar-expand-lg navbar-light g-0 enddecor" style="padding-left: 3rem; padding-right: 3rem;"> 
+        <div class="container-fluid g-0"> 
+            <div class="collapse navbar-collapse"> 
+                <div class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; flex-direction: column; width: 100%;"> 
+                    <div style="display: flex; width: 100%;"> 
+                        <div class="col-md-2">
+                            <img src="images/UPFHLogo.svg" lass="navbar-brand" href="#"> 
                         </div>
-                        <div class="col-md-4 nav-item"> <a class="nav-link active" href="#">Our Providers</a> 
-                        </div>
-                        <div class="col-md-4 nav-item"> <a class="nav-link active" href="#">Resources</a> 
-                        </div>
-                        <form class="d-flex"> 
+                        <div class="col-md-1 spacer"></div>
+                        <div class="col-md-2 nav-item"> <a class="nav-link active" href="#"><img src="images/Locationicon.svg"> Locations</a> 
+                        </div>                         
+                        <div class="col-md-2 nav-item"> <a class="nav-link active" href="#"><img src="images/Providericon.svg">Our Providers</a> 
+                        </div>                         
+                        <div class="col-md-2 nav-item"> <a class="nav-link active" href="#"><img src="images/Resourcesicon.svg">Resources</a> 
+                        </div>                         
+                        <form class="col-md-3"> 
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> 
                         </form>                         
-                    </div>
-                    <div style="display: flex;">
+                    </div>                     
+                    <div style="display: flex; width: 100%;"> 
                         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a> 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> 
                             </div>                             
@@ -58,140 +80,188 @@
                         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a> 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> 
                             </div>                             
-                        </li>
+                        </li>                         
                         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a> 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink7"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> 
                             </div>                             
-                        </li>
-                    </div>
+                        </li>                         
+                    </div>                     
                 </div>                 
             </div>             
         </div>         
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-        <div class="container-fluid"> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler6" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
-            </button>             
-            <div class="collapse navbar-collapse" id="navbarToggler6"> 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-</ul>                 
-                <form class="d-flex"> 
-</form>                 
+    </nav>     
+    <img class="heroimg"> 
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <div style="display: flex; flex-direction: column; justify-content: center;"> 
+            <h1 style="text-align: center;">Welcome to Utah Partners for Health</h1> 
+            <p style="text-align: center;">Our kind, qualified providers make sure you get the best care available.</p> 
+        </div>         
+    </div>     
+    <hr class="large m-0"> 
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-3"> 
+                <img style="width: 100%; height: 200px;"> 
+                <p style="text-align: center;">Find a location</p> 
+            </div>             
+            <div class="col-md-3"> 
+                <img style="width: 100%; height: 200px;"> 
+                <p style="text-align: center;">Find a Provider</p> 
+            </div>             
+            <div class="col-md-3"> 
+                <img style="width: 100%; height: 200px;"> 
+                <p style="text-align: center;">Find a Service</p> 
+            </div>             
+            <div class="col-md-3"> 
+                <img style="width: 100%; height: 200px;"> 
+                <p style="text-align: center;">Accepted Insurance</p> 
             </div>             
         </div>         
-    </nav>
-    <img style="width: 100%; height: 300px">
-    <div class="container">
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-            <h1 style="text-align: center;">Welcome to fhjskhga;lkjgfdl;kgj</h1>
-            <p style="text-align: center;">Our kind..... jgfhdlgkjhal;kjgfhal;kjsdh;g</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <img style="width: 100%; height: 200px;">
-                <p style="text-align: center;">Find a location</p> 
-            </div>
-            <div class="col-md-3">
-                <img style="width: 100%; height: 200px;">
-                <p style="text-align: center;">Find a Provider</p> 
-            </div>
-            <div class="col-md-3">
-                <img style="width: 100%; height: 200px;">
-                <p style="text-align: center;">Find a Service</p> 
-            </div>
-            <div class="col-md-3">
-                <img style="width: 100%; height: 200px;">
-                <p style="text-align: center;">Accepted Insurance</p> 
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-            <h1 style="text-align: center;">New Patients</h1>
-            <p style="text-align: center;">Click if you are:</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" style="display: flex; flex-direction: column;">
-                <div>
-                    <img style="width: 200px; height: 200px;">
-                </div>
-                <h2 style="text-align: center;">Insured</h2>
-                <p style="text-align: center;">Click here if you <em>have</em> insurance</p> 
-            </div>
-            <div class="col-md-6" style="display: flex; flex-direction: column;">
-                <div>
-                    <img style="width: 200px; height: 200px;">
-                </div>
-                <h2 style="text-align: center;">Uninsured</h2>
-                <p style="text-align: center;">Click here if you <em>need</em> insurance</p> 
-            </div>
-        </div>
-    </div>
-    <div style="display: flex; flex-direction: column; justify-content: center;">
-        <h1 style="text-align: center;">Featured Event</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3 style="text-align: center;">Join us for an</h3>
-                <h2 style="text-align: center;">Anxiety<br>And<br>Depression</h2>
-                <h3 style="text-align: center;">Psychotherapy Group</h3>
-                <p>UPFH id fsfkjh dskj sdfj sfdklaksjh sdfhjk sfdhj sdfh sdfhaj fhsaj</p>
-            </div>
-            <div class="col-md-6">
-                <img style="width: 100%; height: 300px">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1 spacer"></div>
-            <div class="col-md-10">
-                <h1 style="text-align: center;">Meet Our Board</h1>
-                <img style="width: 100%; height: 300px">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 style="text-align: center;">UPFH Partners</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 spacer"></div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 spacer"></div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
-            <div class="col-md-2">
-                <img style="width: 100%; height: 100px;">
-            </div>
+    </div>     
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <div style="display: flex; flex-direction: column; justify-content: center;"> 
+            <h1 style="text-align: center;">New Patients</h1> 
+            <p style="text-align: center;">Click if you are:</p> 
         </div>         
-    </div>
-    <div class="container">
-        <h1 style="text-align: center;">Success Stories</h1>
+    </div>     
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-6" style="display: flex; flex-direction: column;"> 
+                <div> 
+                    <img style="width: 200px; height: 200px;"> 
+                </div>                 
+                <h2 style="text-align: center;">Insured</h2> 
+                <p style="text-align: center;">Click here if you <em>have</em> insurance</p> 
+            </div>             
+            <div class="col-md-6" style="display: flex; flex-direction: column;"> 
+                <div> 
+                    <img style="width: 200px; height: 200px;"> 
+                </div>                 
+                <h2 style="text-align: center;">Uninsured</h2> 
+                <p style="text-align: center;">Click here if you <em>need</em> insurance</p> 
+            </div>             
+        </div>         
+    </div>     
+    <hr class="large m-0">
+    <div style="display: flex; flex-direction: column; justify-content: center;"> 
+        <h1 style="text-align: center;">Featured Event</h1> 
+    </div>     
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-4"> 
+                <h3 class="tcenter">Join us for an</h3> 
+                <h2 class="tcenter">Anxiety<br>And<br>Depression</h2> 
+                <h3 class="tcenter">Psychotherapy Group</h3> <br>
+                <h5 class="tcenter">02/22/2024 </h5> 
+                <h5 class="tcenter"> 5:30 PM </h5>
+                <h5 class="tcenter">8446 S. Harrison St, Midvale, UT</h5> 
+            </div>             
+            <div class="col-md-6"> 
+                <img style="width: 100%; height: 300px"> 
+            </div>             
+        </div>         
+    </div>     
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-1 spacer"></div>             
+            <div class="col-md-10"> 
+                <h1 style="text-align: center;">Meet Our Board</h1> 
+                <img style="width: 100%; height: 300px"> 
+            </div>             
+        </div>         
+    </div>     
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-12"> 
+                <h1 style="text-align: center;">UPFH Partners</h1> 
+            </div>             
+        </div>         
+        <div class="row"> 
+            <div class="col-md-2 spacer"></div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+        </div>         
+        <div class="row"> 
+            <div class="col-md-3 spacer"></div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-2"> 
+                <img style="width: 100%; height: 100px;"> 
+            </div>             
+        </div>         
+    </div>     
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <h1 style="text-align: center;">Success Stories</h1> 
     </div>
     <!-- see: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/ -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <hr class="large m-0">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <h1 style="text-align: center;">Donate to help make a difference</h1>
+            <p style="text-align: center;">Your donations improve lives!</p>
+        </div>
+    </div>
+    <hr class="small m-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 spacer"></div>
+            <div class="col-md-4 centeralign g-0"> 
+                <button type="button" class="btn btn-light custom-btn">$35</button>                 
+                <button type="button" class="btn btn-light custom-btn">$50</button>                 
+                <button type="button" class="btn btn-light custom-btn">$90</button>
+                <button type="button" class="btn btn-light custom-btn">Custom</button>                 
+            </div>             
+        </div>         
+    </div>
+    <hr class="large m-0">
+    <footer class="enddecor container-fluid">
+        <div class="row g-0">
+            <div class="col-md-1 spacer"></div>
+            <div class="col-md-3"> 
+                <img src="images/UPFHLogo.svg" style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-4 spacer"></div>
+            <div class="col-md-3 centeralign"> 
+                <div>Contact Us</div>
+                <div>Careers</div>
+                <div>Donate</div>
+            </div>             
+        </div>         
+        <div class="row"> 
+            <div class="col-md-1 spacer"></div>             
+            <hr class="col-md-10 decor" style="margin-top: 1rem;"> 
+        </div>
+    </footer>
+    <div class="enddecor">
+        <div class="row">
+            <div class="col-md-1 spacer"></div>
+            <div style="display: flex;"> 
+                <div class="col-md-2 iconsbox"> 
+                    <img src="images/linkedin.svg" class="icons img-fluid"> 
+                    <img src="images/insta.svg" class="icons img-fluid"> 
+                    <img src="images/facebook.svg" class="icons img-fluid"> 
+                </div>                 
+            </div>             
+        </div>         
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>     
+</body>
