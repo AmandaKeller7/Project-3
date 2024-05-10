@@ -1,16 +1,31 @@
 .large {
-    height: 50px;
+    height: 100px;
     color: transparent;
 }
 
 .medium {
-    height: 30px;
+    height: 50px;
     color: transparent;
 }
 
 .small {
     height: 10px;
     color: transparent;
+}
+
+.feh2 {
+    font-weight: bolder;
+    font-family: Playfair Display;
+    color: white;
+}
+
+.feh3 {
+    color: #699CA7;
+}
+
+.feh5 {
+    font-weight: 400;
+    color: #699CA7;
 }
 
 .decor {
@@ -37,15 +52,16 @@ a:hover .hover {
     color: #BD4E07;
 }
 
-.topbar {
-    background-color: #EBEBEB;
-}
-
 .language {
     flex-direction: row;
     align-items: flex-start;
     display: flex;
-    c: 8px;
+    width: 100%;
+}
+
+.margarine {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .heroimg {
@@ -62,6 +78,13 @@ a:hover .hover {
     text-align: center;
 }
 
+.icenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .centeralign {
     display: flex;
     align-items: center;
@@ -71,8 +94,38 @@ a:hover .hover {
     margin: 0;
 }
 
+.tempasis {
+    font-weight: bolder;
+    font-style: initial;
+}
+
 .enddecor {
     background-color: #F8F8F4;
+}
+
+.topbar {
+    background-color: #EBEBEB;
+}
+
+.rounded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #F8F8F4;
+}
+
+.edgingleft {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.edgingright {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.edgingall {
+    border-radius: 20px 20px 20px 20px;
 }
 
 .icons {
