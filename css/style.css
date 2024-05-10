@@ -21,19 +21,12 @@
 
 .feh3 {
     color: #699CA7;
+    font-weight: 400;
 }
 
 .feh5 {
     font-weight: 400;
     color: #699CA7;
-}
-
-.decor {
-    height: 2px;
-    background-color: #1E1E1E;
-    margin: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .hover {
@@ -57,6 +50,26 @@ a:hover .hover {
     align-items: flex-start;
     display: flex;
     width: 100%;
+}
+
+.phone {
+    flex-direction: row;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.dcenter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchy {
+    width: 100%;
+    height: 100%;
+    max-height: 2.5rem;
 }
 
 .margarine {
@@ -88,7 +101,6 @@ a:hover .hover {
 .centeralign {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
     padding: 0;
     margin: 0;
@@ -99,12 +111,24 @@ a:hover .hover {
     font-style: initial;
 }
 
+.decor {
+    height: 2px;
+    background-color: #1E1E1E;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .enddecor {
     background-color: #F8F8F4;
 }
 
 .topbar {
     background-color: #EBEBEB;
+}
+
+.itembar {
+    background-color: #314A4F;
 }
 
 .rounded {
@@ -138,6 +162,10 @@ a:hover .hover {
     justify-content: space-between;
     max-width: 7rem;
     padding-bottom: 2rem;
+}
+
+.iconspacing {
+    margin-right: .5rem;
 }
 
 footer {
