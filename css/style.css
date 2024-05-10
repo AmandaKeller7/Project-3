@@ -1,4 +1,3 @@
-
 .large {
     height: 50px;
     color: transparent;
@@ -22,26 +21,41 @@
     margin-bottom: 1rem;
 }
 
+.hover {
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #1F2F33;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #BD4E07;
+}
+
+a:hover .hover {
+    color: #BD4E07;
+}
+
 .topbar {
     background-color: #EBEBEB;
-
 }
 
 .language {
-    flex-direction: row; 
-    align-items: flex-start; 
-    display: flex; c
-    olumn-gap: 8px;olumn-gap
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    c: 8px;
 }
 
 .heroimg {
     width: 100%;
-    height: 24rem;
+    height: 50rem;
 }
 
 .custom-btn {
-background-color: #1F2F33;
-color: white;
+    background-color: #1F2F33;
+    color: white;
 }
 
 .tcenter {
