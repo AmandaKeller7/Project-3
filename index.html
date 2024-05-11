@@ -1,17 +1,19 @@
-<DOCTYPE! html>
-    <head> 
-        <title> UPFH </title>         
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>         
-        <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
+<head> 
+    <title> UPFH </title>     
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>     
+    <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="js/javascript.js"></script>
     <!-- overriding bootstrap styles and css -->
     <style>.custom-btn { background-color: #1F2F33; color: white; height: 4rem; width: 7rem; border-radius: 13px; font-family: Montserrat; margin: 1rem; padding-left: 1.5rem; padding-right: 1.5rem; }</style>
+    <style>.tiny-btn { background-color: #314A4F; color: white; height: 1.5rem; width: 2.5rem; border-radius: 13px; font-size: 18px; font-family: Montserrat; margin-left: .5rem; }</style>
+    <style>.select-btn { background-color: transparent; color: #314A4F; border: 2px solid #C1682E; height: 1.5rem; width: 2.5rem; border-radius: 13px; font-size: 18px; font-family: Montserrat; margin-left: .5rem; font-weight: 500; }</style>
     <style>h1 { font-weight: bolder; font-family: Playfair Display; font-size: 48px; }</style>
     <style>h2 { font-family: Montserrat; }</style>
     <style>h3 { font-family: Montserrat; }</style>
@@ -21,47 +23,46 @@
     <style>p { font-weight: 500; font-family: Montserrat; }</style>
     <style>a { font-weight: 300; font-family: Montserrat; }</style>
     <!-- end overriding bootstrap style and css -->
-    <body> 
-        <div class="container-fluid g-0"> 
-            <div class="row"> 
-                <div class="row topbar g-0" style="height: 2rem;"> 
-                    <div class="col-md-3 language" style="padding-left: 2rem;"> 
-                        <div>
-                            <p>Language:</p>
-                        </div>                         
-                        <div>
-                            <p>EN</p>
-                        </div>                         
-                        <div>
-                            <p>ES</p>
-                        </div>                         
-                        <div>
-                            <p>PT</p>
-                        </div>                         
-                    </div>                     
-                    <div class="col-md-6 spacer"></div>
-                    <div class="col-md-3 g-0 phone" style="padding-right: 2rem;">
-                        <div style=">
-                            <p style=">(801) 417-0131</p>
-                    </div>                     
+</head>
+<body> 
+    <div class="container-fluid g-0"> 
+        <div class="row topbar g-0" style="height: 2.5rem;"> 
+            <div class="col-md-3 language" style="padding-left: 2rem; display: flex; flex-direction: row; align-items: center;"> 
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <p class="m-0">Language:</p>
+                </div>
+                <button type="button" class="btn p-0 select-btn">
+                    <p class="transbtn">EN</p>
+                </button>                 
+                <button type="button" class="btn p-0 tiny-btn">
+                    <p class="transbtn">SP</p>
+                </button>                 
+                <button type="button" class="btn p-0 tiny-btn">
+                    <p class="transbtn">PT</p>
+                </button>                 
+            </div>             
+            <div class="col-md-6 spacer"></div>
+            <div class="col-md-3 g-0 phone" style="padding-right: 2rem;">
+                <div>
+                    <p class="m-0">Phone: (801) 417-0131</p>
                 </div>                 
-            </div>
+            </div>             
         </div>         
     </div>     
     <nav class="navbar navbar-expand-lg navbar-light g-0 p-0 enddecor"> 
         <div class="container-fluid g-0"> 
             <div class="collapse navbar-collapse"> 
                 <div class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; flex-direction: column; width: 100%;"> 
-                    <div style="display: flex; width: 100%; padding-left: 3rem; padding-right: 3rem; padding-top: 1rem; padding-bottom: 1rem;"> 
+                    <div style="display: flex; width: 100%; padding-left: 4rem; padding-right: 5.5rem; padding-top: 1rem; padding-bottom: 1rem;"> 
                         <div class="col-md-2">
                             <img src="images/UPFHLogo.svg" lass="navbar-brand" href="#"> 
                         </div>
-                        <div class="col-md-3 spacer"></div>
-                        <div class="col-md-5 nav-item icons" style="align-items: center;"> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Locationicon.svg"> Locations</a> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Providericon.svg">Our Providers</a> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Resourcesicon.svg">Resources</a> 
+                        <div class="col-md-1 spacer"></div>
+                        <div class="col-md-6 nav-item icons" style="align-items: center;"> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Locationicon.svg"> Locations</a> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Providericon.svg">Our Providers</a> <a class="nav-link active" href="#"><img class="iconspacing" src="images/Resourcesicon.svg">Resources</a> 
                         </div>
-                        <div class="g-0 p-0"> 
-                            <form class="col-md-2" style="width: 100%; height: 100%; display: flex; align-items: center;">
-                                <input class="form-control me-2 g-0 searchy" type="search" placeholder="Search..." aria-label="Search">
+                        <div class="g-0 p-0 container-fluid"> 
+                            <form class="col-md-3" style="width: 100%; height: 100%; display: flex; align-items: center;"> <span class="input-group-text searchy g-0" style="border-radius: 20px 0px 0px 20px; height: 100%; background-color: white; border: none;"><img src="images/searchicon.svg"></span>
+                                <input class="form-control me-2 g-0 p-0 searchy edgingright" style="border-radius: 0px 20px 20px 0px; border: none; font-family: montserrat;" type="search" placeholder="Search..." aria-label="Search">
                             </form>
                         </div>                         
                     </div>                     
@@ -145,6 +146,7 @@
                     <div class="rounded rounded-circle">
                         <img src="images/IDaccept.svg"> 
                     </div>
+                    <hr class="small m-0">
                 </div>                 
                 <h2 style="text-align: center;">Insured</h2> 
                 <h4 style="text-align: center;">Click here if you <em class="tempasis">have</em> insurance</h4> 
@@ -154,6 +156,7 @@
                     <div class="rounded rounded-circle">
                         <img src="images/IDdeny.svg"> 
                     </div>
+                    <hr class="small m-0">
                 </div>                 
                 <h2 style="text-align: center;">Uninsured</h2> 
                 <h4 style="text-align: center;">Click here if you <em class="tempasis">need</em> insurance</h4> 
@@ -165,10 +168,10 @@
         <h1 style="text-align: center;">Featured Event</h1> 
     </div>     
     <hr class="small m-0"> 
-    <div class="container-fluid g-0"> 
-        <div class="row"> 
+    <div class="container-fluid"> 
+        <div class="row gx-0"> 
             <div class="col-md-2 spacer"></div>
-            <div class="col-md-3 g-0 edgingleft icenter" style="background-color: #314A4F; padding: 2rem;"> 
+            <div class="col-md-3 edgingleft icenter" style="background-color: #314A4F; padding: 2rem;"> 
                 <h3 class="tcenter feh3">Join us for an</h3> 
                 <h1 class="tcenter feh2">Anxiety<br>And<br>Depression</h1> 
                 <h3 class="tcenter feh3">Psychotherapy Group</h3> <br> <br> <br>
@@ -178,7 +181,7 @@
                 <h5 class="tcenter feh5">8446 S. Harrison St, Midvale, UT</h5> 
             </div>             
             <div class="col-md-5 g-0"> 
-                <img src="images/feimage.png" class="edgingright" style="width: 100%; height: 100%; object-fit: cover;"> 
+                <img src="images/feimage.png" class="edgingright img-fluid" style="width: 100%; height: 100%; object-fit: cover;"> 
             </div>             
         </div>         
     </div>     
@@ -194,7 +197,14 @@
                         <img class="img-fluid edgingall" src="images/board.png" style="object-fit: cover;"> 
                     </div>
                     <hr class="small m-0"> 
-                    <p style="text-align: center;">UPFH is a non-profit, Federally Qualified Health Center (FQHC). Through the generosity of our community, for over 20 years we have provided compassionate, comprehensive, quality care. Your support empowers underserved individuals, families, and communities.</p>
+                    <div class="container-fluid"> 
+                        <div class="row"> 
+                            <div class="col-md-1 spacer"></div>
+                            <div class="col-md-10">
+                                <p style="text-align: center;">UPFH is a non-profit, Federally Qualified Health Center (FQHC). Through the generosity of our community, for over 20 years we have provided compassionate, comprehensive, quality care. Your support empowers underserved individuals, families, and communities.</p>
+                            </div>
+                        </div>                         
+                    </div>                     
                 </div>                 
             </div>             
         </div>         
@@ -206,98 +216,223 @@
                 <h1 style="text-align: center;">UPFH Partners</h1> 
             </div>             
         </div>         
-        <hr class="small m-0">
-        <section class="enddecor">
-            <hr class="medium m-0"> 
-            <div class="row"> 
-                <div class="col-md-2 spacer"></div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge1.svg" class="img-fluid"> 
-                </div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge2.svg" class="img-fluid"> 
-                </div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge3.svg" class="img-fluid"> 
-                </div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge4.svg" class="img-fluid"> 
-                </div>                 
+    </div>     
+    <hr class="small m-0">
+    <section class="enddecor container-fluid">
+        <hr class="medium m-0"> 
+        <div class="row"> 
+            <div class="col-md-2 spacer"></div>             
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge1.svg" class="img-fluid"> 
             </div>             
-            <div class="row"> 
-                <div class="col-md-3 spacer"></div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge5.svg" class="img-fluid"> 
-                </div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge6.svg" class="img-fluid"> 
-                </div>                 
-                <div class="col-md-2 icenter"> 
-                    <img src="images/badge7.svg" class="img-fluid"> 
-                </div>                 
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge2.svg" class="img-fluid"> 
             </div>             
-            <hr class="medium m-0"> 
-        </section>         
-        <hr class="large m-0">
-        <div class="container-fluid"> 
-            <h1 style="text-align: center;">Success Stories</h1> 
-            <hr class="small m-0"> 
-        </div>
-        <!-- see: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/ -->
-        <hr class="large m-0">
-        <div class="container">
-            <div style="display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="text-align: center;">Donate to help make a difference</h1>
-                <h5 style="text-align: center;">Your donations improve lives</h5>
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge3.svg" class="img-fluid"> 
+            </div>             
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge4.svg" class="img-fluid"> 
+            </div>             
+        </div>         
+        <div class="row"> 
+            <div class="col-md-3 spacer"></div>             
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge5.svg" class="img-fluid"> 
+            </div>             
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge6.svg" class="img-fluid"> 
+            </div>             
+            <div class="col-md-2 icenter"> 
+                <img src="images/badge7.svg" class="img-fluid"> 
+            </div>             
+        </div>         
+        <hr class="medium m-0"> 
+    </section>     
+    <hr class="large m-0">
+    <div class="container-fluid"> 
+        <h1 style="text-align: center;">Success Stories</h1> 
+        <hr class="small m-0"> 
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 spacer"></div>
+            <div class="col-md-10">
+                <div id="testimonialCarousel" class="carousel" data-bs-interval="false" data-ride="carousel" data-pause="hover">
+                    <div id="carouselInner" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="overflow-hidden d-flex justify-content-around">
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">0 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overflow-hidden d-flex justify-content-around">
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overflow-hidden d-flex justify-content-around">
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">6 Lorem ipsum dolor.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">7 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                                <div class="card rounded-4">
+                                    <div class="card-body rounded-4">
+                                        <img src="images/stephanie-liverani.png" class="rounded-top-4">
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style="margin: .5em;">Rachel's Story</h4>
+                                        <p class="card-text" style="margin: .7em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
         </div>
-        <hr class="medium m-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 spacer"></div>
-                <div class="col-md-6 centeralign g-0"> 
-                    <button type="button" class="btn btn-light custom-btn">$35</button>                     
-                    <button type="button" class="btn btn-light custom-btn">$50</button>                     
-                    <button type="button" class="btn btn-light custom-btn">$90</button>
-                    <button type="button" class="btn btn-light custom-btn">Custom</button>                     
+    </div>     
+    <hr class="large m-0">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <h1 style="text-align: center;">Donate to help make a difference</h1>
+            <h5 style="text-align: center;">Your donations improve lives</h5>
+        </div>
+    </div>
+    <hr class="medium m-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 spacer"></div>
+            <div class="col-md-6 centeralign g-0"> 
+                <button type="button" class="btn btn-light custom-btn">$35</button>                 
+                <button type="button" class="btn btn-light custom-btn">$50</button>                 
+                <button type="button" class="btn btn-light custom-btn">$90</button>
+                <button type="button" class="btn btn-light custom-btn">Custom</button>                 
+            </div>             
+        </div>         
+    </div>
+    <hr class="large m-0">
+    <footer class="enddecor container-fluid">
+        <div class="row g-0">
+            <div class="col-md-1 spacer"></div>
+            <div class="col-md-3"> 
+                <img src="images/UPFHLogo.svg" style="width: 100%; height: 100px;"> 
+            </div>             
+            <div class="col-md-4 spacer"></div>
+            <div class="col-md-3 centeralign"> 
+                <div>
+                    <a class="hover">Contact Us</a>
+                </div>
+                <div>
+                    <a class="hover">Careers</a>
+                </div>
+                <div>
+                    <a class="hover">Donate</a>
+                </div>
+            </div>             
+        </div>         
+        <div class="row"> 
+            <div class="col-md-1 spacer"></div>             
+            <hr class="col-md-10 decor" style="margin-top: 1rem;"> 
+        </div>
+    </footer>
+    <div class="enddecor container-fluid">
+        <div class="row">
+            <div class="col-md-1 spacer"></div>
+            <div class="col-md-2 iconsbox"> 
+                <div style="display: flex; justify-content: space-around; width: 50%;"> <a href="https://www.linkedin.com/in/utah-partners-a28125299/"><img src="images/linkedin.svg" class="icons img-fluid"> </a><a href="https://www.facebook.com/UtahPartnersForHealth/"><img src="images/insta.svg" class="icons img-fluid"> </a><a href="https://www.linkedin.com/in/utah-partners-a28125299/"><img src="images/facebook.svg" class="icons img-fluid"></a>
                 </div>                 
             </div>             
         </div>
-        <hr class="large m-0">
-        <footer class="enddecor container-fluid">
-            <div class="row g-0">
-                <div class="col-md-1 spacer"></div>
-                <div class="col-md-3"> 
-                    <img src="images/UPFHLogo.svg" style="width: 100%; height: 100px;"> 
-                </div>                 
-                <div class="col-md-4 spacer"></div>
-                <div class="col-md-3 centeralign"> 
-                    <div>
-                        <a class="hover">Contact Us</a>
-                    </div>
-                    <div>
-                        <a class="hover">Careers</a>
-                    </div>
-                    <div>
-                        <a class="hover">Donate</a>
-                    </div>
-                </div>                 
-            </div>             
-            <div class="row"> 
-                <div class="col-md-1 spacer"></div>                 
-                <hr class="col-md-10 decor" style="margin-top: 1rem;"> 
-            </div>
-        </footer>
-        <div class="enddecor">
-            <div class="row">
-                <div class="col-md-2 spacer"></div>
-                <div style="display: flex;"> 
-                    <div class="col-md-1 spacer"></div>
-                    <div class="col-md-2 iconsbox"> <a href="https://www.linkedin.com/in/utah-partners-a28125299/"><img src="images/linkedin.svg" class="icons img-fluid"> </a><a href="https://www.facebook.com/UtahPartnersForHealth/"><img src="images/insta.svg" class="icons img-fluid"> </a><a href="https://www.linkedin.com/in/utah-partners-a28125299/"><img src="images/facebook.svg" class="icons img-fluid"></a>
-                    </div>                     
-                </div>                 
-            </div>             
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    </body>
-    <html>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</body>
+<html>
